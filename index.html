@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujian Notes App</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> 
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wghtq0,100;0"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet"href="./src/styles/main.css"/>
+    <link rel="stylesheet"href="./src/styles/reset.css"/>
+    
+</head>
+
+<body>
+    <image-figure></image-figure>
+    
+    <header class="head_bar">
+        <h1 class="head_bar_title"> Note Apps</h1>
+        <p
+        class="head_bar_desc">
+    welcome, senang bertemu dengan anda
+ada yang bisa kami bantu ? ayo mencatat</p>
+
+    </header>
+    <main>
+        <form class="form">
+            <div class="form__group">
+                <label for ="title" class="form__label">Judul</label>
+                <input id="title"
+                name= "title"
+                type= "text"
+                placeholder = "e.g. Welcome to note!"
+
+                >
+            </div>
+
+            <div class="form__group">
+                <label for ="body" class="form__label">Isi</label>
+              
+                <input
+                
+                id="body"
+                name="body"
+                type="text"
+                placeholder="e.g This is your first Note"
+        
+                >
+            </div>
+
+            <div>
+                <input 
+                id="archived"
+                name="archived"
+                type="checkbox"
+                />
+                <label for="archived">
+                    Mark as archive</label>
+            </div>
+            <button class="form__submit">
+                Add to Note </button>
+        </form>
+
+    <section class="notes">
+        <h2>Archived</h2>
+        <ul class="notes__list notes__list--archive"></ul>
+    </section>
+
+    <section class="notes">
+        <h2>NotArchived</h2>
+        <ul class="notes__list notes__list--notarchive"></ul>
+    </section>
+
+</main>
+<footer>
+    <h3>Created By
+        <a>TommyScientists</a>
+    </h3>
+</footer>
+<script src="./script.js"></script>
+<script type="module" src="./script.js"></script>
+    
+   
+    </body>
+</html>
